@@ -20,8 +20,11 @@ public class AddressController {
 	public CountryDao getCountryDao() {
 		return countryDao;
 	}
+	 
+	public static void main(String[] args) {
+		CountryDao cd = new CountryDao();
+		AddressController ac = new AddressController(cd);
+	}
 	
-	CountryDao c = new CountryDao();
-	AddressController ac = new AddressController(c);
 	
 }
